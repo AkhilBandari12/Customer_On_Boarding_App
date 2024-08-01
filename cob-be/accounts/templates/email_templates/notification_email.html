@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Notification</title>
+    <style>
+        /* CSS styles for email content */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .email-header {
+            background-color: #3A3F51;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .email-body {
+            background-color: #ffffff;
+            padding: 20px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .email-body p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="email-header">
+            <h2>New Notification</h2>
+        </div>
+        <div class="email-body">
+            <p>Hello {{ name }},</p>
+            <p>You have received a new notification:</p>
+            <p>{{ message }}</p>
+            <p>Notification time: {{ notification_time }}</p>
+            <p>Thank you!</p>
+        </div>
+    </div>
+</body>
+</html>

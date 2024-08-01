@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Welcome {{user.first_name}}</h3>
+<hr>
+<a href="{% url "create_sales_agent"%}">create salesagent</a>
+{% endblock content %}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to [Your Company Name]!</title>
+    <style>
+        /* Reset styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #BEC1C7;
+            color: #3A3F51;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #3A3F51;
+            text-align: center;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3A3F51;
+            color: #FFFFFF;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #BEC1C7;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Flexydial - Welcomes you {{ name }}..</h1>
+        <p>Dear {{ name }},</p>
+        <p>We're thrilled to have you on board. Here are your login credentials:</p>
+        <ul>
+            <li><strong>Username/Email:</strong> {{ email }}</li>
+            <li><strong>Password:</strong> Use the password that you've setup during registering!</li>
+        </ul>
+        <p>Please click the button below to visit our site and log in:</p>
+        <p><a class="btn" href="http://www.localhost:5001/">Visit Site</a></p>
+        <p>If you have any questions or need assistance, feel free to contact our Flexydial Support Team!.</p>
+        <div class="footer">
+            <p>This email was sent to {{ email }}. If you believe you received this message in error, please contact us immediately.</p>
+        </div>
+    </div>
+</body>
+</html>
